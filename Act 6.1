@@ -1,0 +1,51 @@
+# Act.-6-Java-
+/*
+*    To  change this license header, choose License Headers in
+Project Properties.
+*    To  change this template file, choose Tools | Templates
+*    and  open the template in the editor
+*    /
+package com.mycompany.computoactividades;
+/**
+*
+* @author jajimenez
+*/
+public class Actividad6 {
+        public static void main(String[] args) {
+                Alumno alumno = new Alumno();
+                alumno.nombre = "Alfredo";
+                Double promedio = promedio(alumno.calificacion);
+                String calificacion = calificacion(promedio);
+                imprimirCalificacion(alumno, promedio, calificacion);
+        }
+        public static Double promedio(Double[] calificacion) {
+                Double promedio = 55d;
+                /*código para calcular el promedio*/
+                return promedio;
+        }
+        public static String calificacion(Double promedio) {
+        String calificacion = "";
+        if (promedio <= 50) {
+             calificacion = "F";
+        }
+        if (promedio >= 51 && promedio <= 60) {
+             calificacion = "E";
+        }
+        /*completar este código */
+        return calificacion;
+    }
+    public static void imprimirCalificacion(Alumno alumno, Double promedio, String calificacion) {
+         System.out.println("Nombre del estudiante: " + alumno.nombre); /*aqui debe de ir un for para imprimir las calificaciones*/
+          System.out.println("Promedio: " + promedio);
+          System.out.println("Calificación: " + calificacion);
+    }
+}
+public class MiClase  {
+F valor = 50 o menos;
+E valor = 51 a 60;
+D valor = 61 a 70;
+C valor = 71 a 80;
+B valor = 81 a 90;
+A valor = 91 a 100;
+boolean valor_logico = false;
+}
